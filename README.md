@@ -8,5 +8,5 @@ Below is a preview of the website:
 
 <p align="center">
     <a href="https://azrmicael.com/">
-    <img src="./assets/portfolio-preview.png" alt="AzrMicael's portfolio" height="700">
+    <img src="./assets/portfolio-preview.png" alt="AzrMicael's portfolio" width="700">
 </p>
