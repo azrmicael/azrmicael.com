@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Our custom CSS and JS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Analisador de Números | AzrMicael</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="dark-blue">
+    <!-- Header -->
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <section>
+                <h2>Forneça números (entre 1 e 100):</h2>
+
+                <div class="inputs">
+                    <input type="number" name="number" id="number" min="0">
+                    <input type="button" value=" Adicionar " id="nBox" onclick="addNum()">
+                </div>
+
+                <div class="list">
+                    <nav>
+                        <ul name="list" id="list">
+                            <li id="li">Adicione valores.</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="inputs">
+                    <input type="button" value="Trocar tema" onclick="changeTheme()">
+                    <input type="button" value="Analisar" id="bEnd" onclick="calc()">
+                </div>
+
+                <div id="res" class="result"></div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <a href="../index.html"> &copy; AzrMicael</a>
+    </footer>
+</body>
+</html>

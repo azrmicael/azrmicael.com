@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<!-- Micael's Auto Repair (Home) -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.png">
+
+    <!-- Bootstrap CSS and JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Our custom CSS and JS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Home | Micael's Auto Repair</title>
+    <script src="main.js" defer></script>
+</head>
+
+<body id="home" class="home">
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="./index.html">
+                    <i class="fa-solid fa-car-burst"></i> Micael's Auto Repair
+                </a>
+
+                <button class="navbar-toggler text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="sr-only">Menu</span>
+                    <svg fill="currentColor" class="hamburger" viewBox="0 0 100 100" width="250">
+                        <rect class="line top" width="80" height="10" x="10" y="15" rx="5"></rect>
+                        <rect class="line middle" width="80" height="10" x="10" y="45" rx="5"></rect>
+                        <rect class="line bottom" width="80" height="10" x="10" y="75" rx="5"></rect>
+                    </svg>
+              </button>
+
+              <div class="collapse navbar-collapse" data-visible="false" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./vehicles.html">Vehicles</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./specials.html">Specials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
+                    </ul>
+              </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main id="main" class="main">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <video id="hero--video" class="hero--video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+                <source id="video--source" class="video--source" src="assets/mechanic-shop-mobile.mp4" type="video/mp4">
+            </video>
+
+            <div class="hero--overlay">
+                <div class="container-custom h-100">
+                    <div class="hero--content d-flex flex-column h-100 justify-content-center align-items-start">
+                        <h1 class="fs-600 fw-bold mb-2">The shop you can trust.</h1>
+                        <p class="fs-400 lead mb-3">Performing automotive inspections and car repair services since 1988.</p>
+                        <a href="#appointment" class="fs-400 mt-2 btn btn-lg btn-outline-light" role="button">Schedule an Appointment</a>
+                    </div>
+                </div>
+                
+                <div class="hero--explore fs-400 d-flex flex-column">
+                    <a href="#services">Explore</a>
+                    <a href="#services"><i class="fa-solid fa-arrow-down"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section id="services" class="our-services">
+            <div class="container-custom">
+                <h2 class="fs-600 fw-bold mt-5 pt-4 mb-4">Our Services</h2>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    
+                    <!-- #1 Service -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/mechanic-shop-cards-1.jpg" class="card-img-top" alt="a mechanic standing next to a car with its hood open">
+                            <div class="card-body">
+                            <h5 class="card-title fw-bold">Auto Repairs</h5>
+                            <p class="card-text">With pick-up and delivery services available, we take all the hassle out of getting your vehicles repaired.</p>
+                            <a href="./services.html" class="btn btn-outline-dark mt-2">View Services</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- #2 Service -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/mechanic-shop-cards-2.jpg" class="card-img-top" alt="a mechanic with lamp under a suspended car">
+                            <div class="card-body">
+                            <h5 class="card-title fw-bold">State Inspections</h5>
+                            <p class="card-text">Call to schedule a CA State Inspection for your Car, Truck or Motorcycle and CA emissions testing. </p>
+                            <a href="./services.html" class="btn btn-outline-dark mt-2">View Services</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- #3 Service -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/mechanic-shop-cards-3.jpg" class="card-img-top" alt="the bench and tools of a mechanical workshop">
+                            <div class="card-body">
+                            <h5 class="card-title fw-bold">Maintenance Services</h5>
+                            <p class="card-text">We make sure you keep up to date with your car's maintenance requirements: synthetic oil, filters etc.</p>
+                            <a href="./services.html" class="btn btn-outline-dark mt-2">View Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq bg-dark pb-4">
+            <div class="container-custom mb-3">
+                <h2 class="fs-600 fw-bold mt-5 pt-4 mb-4">FAQ's</h2>
+
+                <div class="row row-cols-1 row-cols-md-2">
+                    
+                    <!-- left side -->
+                    <div class="col faq-left-side">
+                        <p class="mb-3">Customer satisfaction is the measure of our success. Our unique service 
+                            promises mean a commitment to finding the best possible solution to any problem.
+                        </p>
+                        
+                        <picture>
+                            <source media="(min-width: 960px)" srcset="./assets/mechanic-shop-faq-desktop.png" type="image/png">
+                            <source media="(min-width: 720px)" srcset="./assets/mechanic-shop-faq-tablet.png" type="image/png">
+                            <img src="./assets/mechanic-shop-faq-mobile.png" class="rounded" alt="a car with smoke coming out of the front">
+                        </picture>
+                    </div>
+
+                    <!-- right side -->
+                    <div class="col faq-right-side">
+                        <div class="accordion" id="accordionFAQ">
+
+                            <!-- #1 Accordion item -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button fs-400 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        How long will it take to fix my car?
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <strong>Depending on what the issue is...</strong> it could be fixed in a day or take over 1 week for a major job. Your car might need service for a multitude of reasons from any assortment of low fluids, worn brake linings, or component malfunctions. Once we diagnose your car, we will be able to give you a better estimate for how long the repair will take.
+                                    </div>
+                              </div>
+                            </div>
+
+                            <!-- #2 Accordion item -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-400 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Do I need to make an appointment?
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <strong>It is highly recommended that you make an appointment.</strong> We are an independent auto repair center and we pride ourselves on our quality work and stellar reviews. We might be completely booked and not be able to get to your car right away. For that reason, we recommend making an appointment or calling ahead.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- #3 Accordion item -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-400 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Do you have a warranty?
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <strong>Yes, we certainly do.</strong> Our warranty is 2 years or 24,000 miles and covers you nationwide! We are proud to stand behind our work.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- #4 Accordion item -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-400 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Do you do complete auto restorations?
+                                    </button>
+                                </h3>
+                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <strong>Yes!</strong> We have a complete body shop and do restore classic and vintage cars. Contact us to tell us about your project car today.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- #5 Accordion item -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-400 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Can you do a full technical inspection of the car?
+                                    </button>
+                                </h3>
+                                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        <strong>Yes,</strong> you can get a full MOT with us, you don't even need to worry about additional purchases, as you can buy all MOT materials in our store.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Our Team of Specialists Section -->
+        <section id="specialists" class="our-specialists">
+            <div class="container-custom">
+                <h2 class="fs-600 fw-bold mt-5 pt-4 mb-4">Our Team of Specialists</h2>
+
+                <!-- #1 Specialist -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="assets/mechanic-shop-specialist-1-portrait.png" type="image/png">
+                                <img src="assets/mechanic-shop-specialist-1.png" class="card-img-top" alt="Phillip M. Walters">
+                            </picture>
+                            <div class="card-body">
+                            <h5 class="card-title fw-bold">Phillip M. Walters</h5>
+                            <p class="card-text">General mechanic. Diagnoses and repairs various problems in different automotive vehicles, including cars, trucks, vans and motorcycles.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- #2 Specialist -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="assets/mechanic-shop-specialist-2-portrait.png" type="image/png">
+                                <img src="assets/mechanic-shop-specialist-2.png" class="card-img-top" alt="Gregory E. Barker">
+                            </picture>
+                            <div class="card-body">
+                            <h5 class="card-title fw-bold">Gregory E. Barker</h5>
+                            <p class="card-text">Brake and transmission technician. Identifies and corrects complications with brake systems and powertrain components etc.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- #3 Specialist -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="assets/mechanic-shop-specialist-3-portrait.png" type="image/png">
+                                <img src="assets/mechanic-shop-specialist-3.png" class="card-img-top" alt="Ross B. Snider">
+                            </picture>
+                            <div class="card-body">
+                            <h5 class="card-title fw-bold">Ross B. Snider</h5>
+                            <p class="card-text">Auto body mechanic. Replaces or restores old or damaged parts such as headlights, bumpers, panels, etc.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- #4 Specialist -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="assets/mechanic-shop-specialist-4-portrait.png" type="image/png">
+                                <img src="assets/mechanic-shop-specialist-4.png" class="card-img-top" alt="Richard Z. Desmond">
+                            </picture>
+                            <div class="card-body">
+                            <h5 class="card-title fw-bold">Richard Z. Desmond</h5>
+                            <p class="card-text">Diesel mechanic. Works on a large variety of vehicles with diesel engines, including cars, trucks and generators.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Schedule an Appointment Section -->
+        <section id="appointment" class="schedule-appointment">
+            <div class="container-custom py-5">
+                <h2 class="fs-600 fw-bold mb-4">Schedule an Appointment</h2>
+
+                <div class="col-12 bg-dark rounded p-4" style="max-width: 66.25rem;">
+                    <form class="row g-3 needs-validation" novalidate>
+
+                        <!-- Full Name -->
+                        <div class="col-md-6">
+                            <label for="validationName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="validationName" placeholder="Your Name" required>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback fs-300">Please check the data provided.</div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="col-md-6">
+                            <label for="FormControlPhone" class="form-label">Phone</label>
+                            <input type="text" class="form-control" id="FormControlPhone" placeholder="Your Phone" required>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback fs-300">Please check the data provided.</div>
+                        </div>
+
+                        <!-- Vehicle -->
+                        <div class="col-md-6">
+                            <label for="validationVehicleModel" class="form-label">Vehicle</label>
+                            <input type="text" class="form-control" id="validationVehicleModel" placeholder="Vehicle Model" required>
+                            <div class="invalid-feedback fs-300">Please check the data provided.</div>
+                        </div>
+
+                        <!-- Email Address -->
+                        <div class="col-md-6">
+                            <label for="FormControlEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="FormControlEmail" placeholder="name@example.com" required>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback fs-300">Please check the data provided.</div>
+                        </div>
+
+                        <!-- Problem description -->
+                        <div class="col-md-12 mb-3">
+                            <label for="validationTextarea" class="form-label">Problem description</label>
+                            <textarea class="form-control" id="validationTextarea" placeholder="My vehicle has a problem..." required></textarea>
+                            <div class="invalid-feedback fs-300"> Please enter a message in the textarea.</div>
+                        </div>
+
+                        <!-- Agree to terms and conditions -->
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+                                <div class="invalid-feedback fs-300">You must agree before submitting.</div>
+                            </div>
+                        </div>
+
+                        <!-- Submit Form -->
+                        <div class="col-12"><button class="btn btn-primary" type="submit">Make an Appointment</button></div>
+                    </form>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer text-center text-lg-start bg-dark text-white mt-3">
+
+        <!-- Social Networks -->
+        <section class="container d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block"><span>Get connected with us on social networks:</span></div>
+            <div>
+                <a href="#!" class="m-1 text-reset"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#!" class="m-1 text-reset"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#!" class="m-1 text-reset"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#!" class="m-1 text-reset"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </section>
+        
+        <section class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+
+                <!-- Micael's Auto Repair -->
+                <div class="col-md-5 col-lg-4 mb-4">
+                    <h3 class="fs-400 fw-bold mb-4 img-inline-with-text">
+                        <img src="assets/favicon.png" alt="logo"> Micael's Auto Repair
+                    </h3>
+                    <p>
+                        Since 1988, performing high-quality automotive inspections and car 
+                        maintenance for drivers in Fresno and surrounding communities.
+                    </p>
+                </div>
+                
+                <hr class="d-md-none">
+
+                <!-- Services -->
+                <div class="d-md-none d-lg-block col-lg-3 mb-4">
+                    <h3 class="fs-400 fw-bold mb-4">Services</h3>
+                    <p><a href="./services.html" class="text-reset">Fleet vehicles</a></p>
+                    <p><a href="./services.html" class="text-reset">Check out, Diagnosis</a></p>
+                    <p><a href="./services.html" class="text-reset">Oil Change + Filters</a></p>
+                    <p><a href="./services.html" class="text-reset">Timing belt, chain</a></p>
+                </div>
+
+                <hr class="d-md-none">
+        
+                <!-- Useful links -->
+                <div class="col-md-3 col-lg-2 mb-4">
+                    <h3 class="fs-400 fw-bold mb-4">Useful links</h3>
+                    <p><a href="./services.html" class="text-reset">Services</a></p>
+                    <p><a href="./vehicles.html" class="text-reset">Vehicles</a></p>
+                    <p><a href="./specials.html" class="text-reset">Specials</a></p>
+                    <p><a href="./about-us.html" class="text-reset">About Us</a></p>
+                </div>
+
+                <hr class="d-md-none">
+
+                <!-- Contact -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <h3 class="fs-400 fw-bold mb-4">Contact</h3>
+                    <p><i class="fa-solid fa-house me-2"></i>Fresno, CA 84652, US</p>
+                    <p><i class="fa-solid fa-envelope me-2"></i>info@example.com</p>
+                    <p><i class="fa-solid fa-phone me-2"></i>(234) 567-8901</p>
+                    <p><i class="fa-solid fa-fax me-2"></i>(234) 567-8902</p>
+                </div>
+
+            </div>
+        </section>
+  
+        <!-- Copyright -->
+        <section class="container fs-300 text-center py-3">
+            © 2023 Company, Inc. All rights reserved.
+        </section>
+    </footer>
+
+</body>
+</html>

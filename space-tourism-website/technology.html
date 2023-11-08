@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<!-- Space Tourism Website (Technology) -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+    
+    <!-- Our custom CSS and JS -->
+    <link rel="stylesheet" href="index.css">
+    <title>Technology | Space Tourism Website</title>
+    <script src="index.js" defer></script>
+</head>
+
+<body id="technology" class="technology">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+    <header class="primary-header flex">
+        <div>
+            <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+        </div>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+                <a class="text-white ff-sans-cond uppercase letter-spacing-2" href="index.html"><li><span aria-hidden="true">00</span>Home</li></a>
+                <a class="text-white ff-sans-cond uppercase letter-spacing-2" href="destination.html"><li><span aria-hidden="true">01</span>Destination</li></a>
+                <a class="text-white ff-sans-cond uppercase letter-spacing-2" href="crew.html"><li><span aria-hidden="true">02</span>Crew</li></a>
+                <a class="active text-white ff-sans-cond uppercase letter-spacing-2" href="technology.html"><li><span aria-hidden="true">03</span>Technology</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" class="grid-container grid-container--technology flow">
+        <h1 class="numbered-title"><span aria-hidden="true">03</span>Space launch 101</h1>
+
+      <div class="numbers-indicators grid" style="justify-content: center;">
+          <button id="launch-vehicle" aria-selected="true" class="bg-dark text-white ff-serif fs-600">1</button>
+          <button id="spaceport" aria-selected="false" class="bg-dark text-white ff-serif fs-600">2</button>
+          <button id="space-capsule" aria-selected="false" class="bg-dark text-white ff-serif fs-600">3</button>
+      </div>
+
+      <article class="technology-info flow">
+        <header class="flow flow--space-small">
+            <h2 class="text-accent ff-sans-cond fs-200 uppercase letter-spacing-2">The terminology...</h2>
+            <p id="technology-name" class="ff-serif fs-700 uppercase">Launch Vehicle</p>
+        </header>
+                    
+        <p id="technology-description" class="mw-50ch text-accent">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+            payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+            WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+            it's quite an awe-inspiring sight on the launch pad!
+        </p>
+        </article>
+
+        <picture>
+            <source id="technology-image-portrait" media="(min-width: 60em)" srcset="assets/technology/image-launch-vehicle-portrait.jpg" type="image/jpg">
+            <img id="technology-image-landscape" src="assets/technology/image-launch-vehicle-landscape.jpg" alt="Launch vehicle">
+        </picture>
+    </main>
+
+</body>
+</html>

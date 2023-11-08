@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!-- Space Tourism Website (Crew) -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+    
+    <!-- Our custom CSS and JS -->
+    <link rel="stylesheet" href="index.css">
+    <title>Crew | Space Tourism Website</title>
+    <script src="index.js" defer></script>
+</head>
+
+<body id="crew" class="crew">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+    <header class="primary-header flex">
+        <div>
+            <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+        </div>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+                <a class="text-white ff-sans-cond uppercase letter-spacing-2" href="index.html"><li><span aria-hidden="true">00</span>Home</li></a>
+                <a class="text-white ff-sans-cond uppercase letter-spacing-2" href="destination.html"><li><span aria-hidden="true">01</span>Destination</li></a>
+                <a class="active text-white ff-sans-cond uppercase letter-spacing-2" href="crew.html"><li><span aria-hidden="true">02</span>Crew</li></a>
+                <a class="text-white ff-sans-cond uppercase letter-spacing-2" href="technology.html"><li><span aria-hidden="true">03</span>Technology</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" class="grid-container grid-container--crew flow">
+        <h1 class="numbered-title"><span aria-hidden="true">02</span>Meet your crew</h1>
+
+        <div class="dot-indicators flex" style="justify-content: center;">
+            <button id="btn-commander" aria-selected="true"><span class="sr-only">Commander</span></button>
+            <button id="btn-specialist" aria-selected="false"><span class="sr-only">Mission specialist</span></button>
+            <button id="btn-pilot" aria-selected="false"><span class="sr-only">Pilot</span></button>
+            <button id="btn-engineer" aria-selected="false"><span class="sr-only">Flight engineer</span></button>
+        </div>
+
+        <article class="crew-info flow">
+            <header class="flow flow--space-small">
+                <h2 id="crew-role" class="ff-serif fs-600 uppercase">Commander</h2>
+                <p id="crew-name" class="ff-serif fs-700 uppercase">Douglas Hurley</p>
+            </header>
+                        
+            <p id="crew-bio" class="mw-50ch text-accent">
+                Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+                and former NASA astronaut. He launched into space for the third time as 
+                commander of Crew Dragon Demo-2.
+            </p>
+        </article>
+
+        <picture>
+            <source id="crew-picture-source" srcset="assets/crew/image-douglas-hurley.webp" type="image/webp">
+            <img id="crew-picture-img" src="assets/crew/image-douglas-hurley.png" alt="Douglas Hurley">
+        </picture>
+
+    </main>
+  
+</body>
+</html>

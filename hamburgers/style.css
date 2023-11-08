@@ -1,0 +1,161 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: hsl(48, 18%, 83%);
+    /* background-color: #1c1c1c; */
+}
+
+.examples {
+    padding: 3rem;
+    max-width: 1200px;
+    display: flex;
+    gap: clamp(2rem, 8vw, 4rem);
+}
+
+button {
+    background: transparent;
+    border: 10px solid var(--button-clr, #000);
+    border-radius: 1rem;
+}
+
+
+/* ======================================== */
+/* --- BUTTON ONE ------------------------- */
+/* ======================================== */
+
+.button-one {
+    --button-clr: #ee524f;
+}
+
+.button-one .line {
+    transition: 
+        transform 300ms ease-in 300ms,
+        rotate 300ms ease-in,
+        opacity 0ms 300ms
+    ;
+    transform-origin: center;
+}
+
+.button-one[aria-expanded="true"] .line {
+    transition: 
+        transform 300ms ease-in,
+        rotate 300ms ease-in 300ms,
+        opacity 0ms 300ms
+    ;
+}
+
+.button-one[aria-expanded="true"] .top {
+    transform: translateY(20px);
+    rotate: 45deg;
+}
+
+.button-one[aria-expanded="true"] .middle {
+    opacity: 0;
+}
+
+.button-one[aria-expanded="true"] .bottom {
+    transform: translateY(-20px);
+    rotate: -45deg;
+}
+
+
+/* ======================================== */
+/* --- BUTTON TWO ------------------------- */
+/* ======================================== */
+
+.button-two {
+    --button-clr: #2abaae;
+}
+
+.button-two[data-state="closed"] :is(.top, .bottom) {
+    animation: to-open-state 1s forwards;
+}
+
+.button-two[data-state="opened"] :is(.top, .bottom) {
+    animation: to-close-state 1s forwards;
+}
+
+/* .button-two .hamburger {
+    transition: rotate 800ms 100ms;
+}
+
+.button-two[data-state="opened"] .hamburger {
+    rotate: 1turn;
+} */
+
+.button-two .line.top {
+    --rotation: -45deg;
+    transform-origin: 65px 45px; /* ! */
+}
+
+.button-two .line.bottom {
+    --rotation: 45deg;
+    transform-origin: 60px 55px; /* ! */
+}
+
+@keyframes to-close-state {
+    0% {
+        stroke-dashoffset: 0px;
+    }
+    40% {
+        stroke-dashoffset: 69.9px;
+    }
+    60% {
+        stroke-dashoffset: 69.9px;
+        rotate: var(--rotation);
+    }
+    100% {
+        stroke-dashoffset: 00.0px;
+        rotate: var(--rotation);
+    }
+}
+
+@keyframes to-open-state {
+    0% {
+        stroke-dashoffset: 0px;
+        rotate: var(--rotation);
+    }
+    40% {
+        stroke-dashoffset: 69.9px;
+        rotate: var(--rotation);
+    }
+    60% {
+        stroke-dashoffset: 69.9px;
+    }
+    100% {
+        stroke-dashoffset: 0px;
+    }
+}
+
+/* ======================================== */
+/* --- BUTTON THREE ----------------------- */
+/* ======================================== */
+
+.button-three {
+    --button-clr: #4184fb;
+    overflow: hidden;
+}
+
+.button-three .hamburger {
+    transition: translate 1s, rotate 1s;
+}
+
+.button-three[aria-expanded="true"] .hamburger {
+    translate: 10px -10px;
+    rotate: 0.125turn;
+}
+
+.button-three .line {
+    transition: 1s;
+    stroke-dasharray: 60 31 60 200;
+}
+
+.button-three[aria-expanded="true"] .line {
+    stroke-dasharray: 60 105 60 200;
+    stroke-dashoffset: -90;
+}

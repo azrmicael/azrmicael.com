@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<!-- My navigation -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://github.com/azrmicael/my-frameworks/blob/main/assets/favicon-32x32.png?raw=true">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+    
+    <!-- Our custom CSS and JS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Navigation | AzrMicael</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="primary-header flex">
+        <div>
+            <img src="https://github.com/azrmicael/my-frameworks/blob/main/assets/logo-512x512.png?raw=true" alt="my framework logo" class="logo">
+        </div>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <svg fill="var(--button-clr)" class="hamburger" viewBox="0 0 100 100" width="250">
+                <rect class="line top"
+                      width="80" height="10"
+                      x="10" y="15" rx="5">
+                </rect>
+                <rect class="line middle"
+                      width="80" height="10"
+                      x="10" y="45" rx="5">
+                </rect>
+                <rect class="line bottom"
+                      width="80" height="10"
+                      x="10" y="75" rx="5">
+                </rect>
+            </svg>
+        </button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+                <li class="active"><a class="text-white ff-sans-cond uppercase letter-spacing-2" href="#">Home</a></li>
+                <li><a class="text-white ff-sans-cond uppercase letter-spacing-2" href="#">Features</a></li>
+                <li><a class="text-white ff-sans-cond uppercase letter-spacing-2" href="#">Pricing</a></li>
+                <li class="disabled"><a class="text-white ff-sans-cond uppercase letter-spacing-2" href="#">Disabled</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+    </main>
+</body>
+</html>

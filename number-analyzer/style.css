@@ -1,0 +1,206 @@
+/* ======================================== */
+/* --- CUSTOM PROPERTIES ------------------ */
+/* ======================================== */
+
+:root {
+    /* colors */
+    --clr-bg: #EDF2FF;
+    --clr-text: #00082F;
+    --clr-text-result: #EDF2FF;
+    --clr-accent: #4263EB;
+    --clr-accent-hover: #364FC7;
+
+    /* font-sizes */
+    --fs-700: clamp(1.95rem, 1.2vw + 1.65rem, 2.81rem);
+    --fs-600: clamp(1.56rem, 0.77vw + 1.37rem, 2.11rem);
+    --fs-500: clamp(1.25rem, 0.47vw + 1.13rem, 1.58rem);
+    --fs-400: clamp(1rem, 0.26vw + 0.93rem, 1.19rem);
+    --fs-350: clamp(1rem, 0.26vw + 0.83rem, 1.10rem);
+    --fs-300: clamp(0.8rem, 0.13vw + 0.77rem, 0.89rem);
+}
+
+
+/* ======================================== */
+/* --- CSS RESET -------------------------- */
+/* ======================================== */
+
+/*
+  1. Use a more-intuitive box-sizing model
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+body, h1, h2, h3, h4, h5, p, figure, picture {
+    margin: 0;
+}
+/*
+  3. Set the font-weight
+*/
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: 500;
+}
+/*
+  4. Allow percentage-based heights in the application
+*/
+html, body {
+    height: 100%;
+}
+/*
+  Typography tweaks
+  5. Add accessible line-height 
+  6. Improve text rendering 
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+/* 
+  7. Remove link decoration
+*/
+a {
+    text-decoration: none;
+    color: var(--clr-text);
+}
+
+
+/* ======================================== */
+/* --- THEMES ----------------------------- */
+/* ======================================== */
+
+body.dark-blue {
+    --clr-bg: #00082F;
+    --clr-text: #FFFFFF;
+    --clr-text-result: #FFFFFF;
+}
+
+body.pink {
+    --clr-bg: #FFF0F6;
+    --clr-text: #1F000B;
+    --clr-text-result: #FFF0F6;
+    --clr-accent: #D6336C;
+    --clr-accent-hover: #A61E4D;
+}
+
+body.dark-pink {
+    --clr-bg: #1F000B;
+    --clr-text: #FFF0F6;
+    --clr-text-result: #FFF0F6;
+    --clr-accent: #D6336C;
+    --clr-accent-hover: #A61E4D;
+}
+
+
+/* ======================================== */
+/* --- COMPONENTS ------------------------- */
+/* ======================================== */
+
+body {
+    background: var(--clr-bg);
+    color: var(--clr-text);
+    font-size: var(--fs-400);
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+h1 { font-size: var(--fs-700); }
+h2 { font-size: var(--fs-500); }
+
+section {
+    background: var(--clr-accent);
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.386);
+}
+
+.inputs {
+    color: var(--clr-text-result);
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem auto;
+    width: 200px;
+}
+
+div.result {
+    color: var(--clr-text-result);
+    text-align: left;
+}
+
+input {
+    background-color: var(--clr-bg);
+    border: none;
+    border-radius: 0.188rem;
+    color: var(--clr-text);
+    font-size: var(--fs-400);
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+input[type="number"] {
+    width: 6.25rem;
+}
+
+input[type="button"] {
+    cursor: pointer;
+}
+
+nav {
+    background-color: var(--clr-bg);
+    border: none;
+    color: var(--clr-text);
+    padding: 0.125rem;
+    text-align: left;
+    text-indent: 0.188rem;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.188rem;
+    /* font-size: 13px; */
+}
+
+nav ul {
+    height: 14.375rem;
+    width: 12.5rem;
+    overflow: hidden; 
+    overflow-y: scroll;
+    list-style-type: none;
+    padding: 0.25rem;
+}
+
+select {
+    background-color: var(--clr-bg);
+    border: none;
+    color: var(--clr-text);
+    padding: 0.313rem;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.188rem;
+}
+
+/* --- Footer ------ */
+
+footer {
+    font-size: var(--fs-300);
+    opacity: 0.6;
+    transition: opacity 400ms;
+}
+
+footer:hover {
+    opacity: 1;
+}
