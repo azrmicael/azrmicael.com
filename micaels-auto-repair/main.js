@@ -26,21 +26,13 @@ navToggle.addEventListener("click", () => {
 // ================================================================= //
 
 const updateVideoSource = () => {
-    const screenWidth = window.innerWidth;
     const video = document.querySelector("#hero--video");
     const source = document.querySelector("#video--source");
     
-    if (screenWidth < 800) {
-        // change the video source, load and play
-        source.setAttribute("src", "assets/mechanic-shop-mobile.mp4");
-        video.load();
-        video.play();
-    } else {
-        // change the video source, load and play
-        source.setAttribute("src", "assets/mechanic-shop-desktop.mp4");
-        video.load();
-        video.play();
-    }
+    // change the video source, load and play
+    source.setAttribute("src", "assets/mechanic-shop-desktop.mp4");
+    video.load();
+    video.play();
 };
 
 
@@ -50,19 +42,14 @@ const updateVideoSource = () => {
 
 if (document.getElementById("home")) {
     document.addEventListener("DOMContentLoaded", () => {
-        updateVideoSource();
+        const screenWidth = window.innerWidth;
+
+        if (screenWidth > 799) {
+            updateVideoSource();
+        }
     });
 }
 
-// ================================================================= //
-// --- When Home's document view (window) is resized --------------- //
-// ================================================================= //
-
-if (document.getElementById("home")) {
-    window.addEventListener("resize", () => {
-        updateVideoSource();
-    });
-}
 
 // ================================================================= //
 // --- Disabling form submissions if there are invalid fields ------ //
