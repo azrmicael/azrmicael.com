@@ -247,6 +247,12 @@ header {
     box-shadow: var(--bs);
 }
 
+.intro__btn {
+    margin-top: 10px;
+    max-height: 33.2833px;
+    width: max-content;
+}
+
 .section__subtitle--intro {
     display: inline-block;
 }
@@ -259,7 +265,9 @@ header {
         grid-column-gap: 1em;
         grid-template-areas: 
             "img title"
-            "img subtitle";
+            "img subtitle"
+            "img btn"
+        ;
         grid-template-columns: min-content max-content;
     }
 
@@ -268,6 +276,11 @@ header {
         min-width: 250px;
         position: relative;
         z-index: 2;
+    }
+
+    .intro__btn {
+        grid-area: btn;
+        margin-top: 0px;
     }
 
     .section__subtitle--intro {
