@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-body {
+html {
     min-height: 100vh;
     display: grid;
     place-content: center;
@@ -14,7 +14,19 @@ body {
     padding: 3rem;
     max-width: 1200px;
     display: flex;
+    flex-direction: column;
     gap: clamp(2rem, 8vw, 4rem);
+}
+
+@media (min-width: 62rem) {
+    .examples {
+        flex-direction: row;
+    }
+}
+
+svg {
+    width: clamp(8.5rem, 30vw, 15rem);
+    height: clamp(8.5rem, 30vw, 15rem);
 }
 
 button {
