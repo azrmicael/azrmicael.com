@@ -1,8 +1,6 @@
-# Draft files
-assets/draft
-micaels-auto-repair/assets/draft
-qr-code-generator/assets/draft
-
+# Drafts and screenshots
+draft/
+screenshots/
 
 # Avoid accidental upload of the Sketch and Figma design files
 *.sketch
@@ -14,3 +12,4 @@ qr-code-generator/assets/draft
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
 .prettierignore
+
