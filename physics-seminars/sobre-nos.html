@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<!-- Física em Itapetinga (Sobre Nós) -->
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.png">
+
+    <!-- HTML Meta Tags -->
+    <title>Sobre Nós | Física em Itapetinga</title>
+    <meta name="description" content="Olá! Esta é a página dos Ciclos de Seminários de Física em Itapetinga.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://fisica.itapetinga.net">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Física em Itapetinga">
+    <meta property="og:description" content="Olá! Esta é a página dos Ciclos de Seminários de Física em Itapetinga.">
+    <meta property="og:image" content="https://github.com/azrmicael/icons/blob/main/open-graph/og-physics.png?raw=true"> <!-- 1200x630px -->
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="fisica.itapetinga.net">
+    <meta property="twitter:url" content="http://fisica.itapetinga.net">
+    <meta name="twitter:title" content="Física em Itapetinga">
+    <meta name="twitter:description" content="Olá! Esta é a página dos Ciclos de Seminários de Física em Itapetinga.">
+    <meta name="twitter:image" content="https://github.com/azrmicael/icons/blob/main/open-graph/og-physics.png?raw=true"> <!-- 1200x630px -->
+    
+    <!-- Bootstrap CSS and JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Our custom CSS and JS -->
+    <link rel="stylesheet" href="ciclo-de-seminarios.css">
+    <script src="ciclo-de-seminarios.js" defer></script>
+</head>
+
+<body id="sobre-nos" class="sobre-nos">
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary" data-bs-theme="light">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="./ciclo-de-seminarios.html">
+                    <img src="assets/favicon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                    Física em Itapetinga
+                </a>
+
+                <div class="theme-and-menu-toggler">
+
+                    <!-- Light/Dark Theme Toggler -->
+                    <div class="theme-toggler">
+                        <input type="checkbox" class="checkbox" id="checkbox" aria-label="toggle theme">
+                        <label for="checkbox" class="checkbox-label">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <span class="ball"></span>
+                        </label>
+                    </div>
+
+                    <!-- Navbar Toggler -->
+                    <button class="navbar-toggler text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toggle navigation">
+                        <span class="sr-only">Menu</span>
+                        <svg fill="var(--clr-secondary)" class="hamburger" viewBox="0 0 100 100" width="250">
+                            <rect class="line top" width="80" height="10" x="10" y="15" rx="5"></rect>
+                            <rect class="line middle" width="80" height="10" x="10" y="45" rx="5"></rect>
+                            <rect class="line bottom" width="80" height="10" x="10" y="75" rx="5"></rect>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" data-visible="false" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="./ciclo-de-seminarios.html">Início</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./ciclos-anteriores.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Edições Anteriores
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./viii-ciclo-de-seminarios.html">VIII Ciclo de Seminários de Física (2022)</a></li>
+                                <li><a class="dropdown-item" href="./vii-ciclo-de-seminarios.html">VII Ciclo de Seminários de Física (2021)</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="./ciclos-anteriores.html">Outras Edições do Ciclo de Seminários</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./sobre-nos.html">Sobre Nós</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main id="main" class="main">
+
+        <!-- Banner Section -->
+        <section id="banner" class="banner">
+            <div class="banner--overlay h-100 w-100">
+                <div class="container-custom w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="fw-bold mb-2 text-center text-white">Sobre Nós</h1>
+                    <p class="fw-bold text-center text-white">Tudo sobre o evento</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Content Section -->
+        <section id="content" class="content mb-5" style="padding-inline: 0.75rem;">
+            <div class="container-custom">
+                <h2 class="fs-600 fw-bold mt-5 pt-4 mb-4">Ciclo de Seminários de Física em Itapetinga</h2>
+
+                <p class="mb-3">
+                    O Ciclo de Seminários de Física em Itapetinga (CSFI) é um projeto de extensão da <a href="http://www.uesb.br/" target="_blank">Universidade Estadual do Sudoeste da Bahia (UESB)</a> idealizado pelo professor <a href="./r-thibes.html" target="_blank">Ronaldo Silva Thibes</a> e desenvolvido por ele em parceria com o <a href="https://sites.google.com/view/colegiado-fisica-uesb-it" target="_blank">Colegiado de Física</a> de Itapetinga. No início, o evento contou com o apoio do extinto Departamento de Estudos Básicos e Instrumentais (DEBI), de 2013 a 2015, e posteriormente do atual Departamento de Ciências Exatas e Naturais (DCEN), de 2018 até 2023.
+                </p>
+
+                <p class="mb-3">
+                    O evento tem com objetivo Nam pellentesque metus vitae cursus porttitor. Nulla diam eros, sodales id eleifend vel, blandit ut nunc. Duis turpis libero, finibus sit amet arcu quis, hendrerit vestibulum sem. Vestibulum id aliquam ipsum. Suspendisse dictum, erat in facilisis tempor, odio est lacinia libero, at facilisis felis arcu eu odio. Cras nec luctus dui, eget tincidunt eros. Nulla cursus tellus vitae tincidunt varius. Donec sem risus, auctor in viverra vel, consequat ac velit. Quisque maximus tempor ante, quis laoreet nulla finibus eget. Donec tincidunt tortor id mi tristique, ut consectetur ex consectetur. Integer imperdiet turpis eros, at ornare ex rutrum eu.
+                </p>
+
+                <h3 class="fs-600 fw-bold mt-4 mb-3">Colaboradores</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis aliquet neque. Duis hendrerit risus eget laoreet scelerisque. Donec efficitur lacus velit, sit amet aliquam mauris suscipit at. Pellentesque tellus turpis, efficitur et sodales nec, facilisis luctus nisl. Nullam sed interdum justo, eget efficitur metus. Morbi et augue eu est pharetra semper id eget velit. Maecenas vel tempus arcu, sit amet elementum ligula. Aliquam magna mi, consectetur quis eros non, ultrices ultricies odio.
+                </p>
+
+
+                <h4 class="fs-500 fw-bold mt-4 mb-3">Colaboradores por edição</h4>
+
+                <p>
+                    Fusce iaculis semper tortor, sed mollis nibh pulvinar vitae. Suspendisse potenti. Aliquam erat volutpat. Morbi sed mi justo. Quisque volutpat gravida laoreet. Donec augue ipsum, imperdiet in dolor blandit, molestie interdum dui. Suspendisse tincidunt vitae felis et malesuada.
+                </p>
+
+                <!-- X Ciclo de Seminários de Física (2024) -->
+                <h5 class="fs-450 fw-bold mt-4 mb-2">
+                    X Ciclo de Seminários de Física (2024)
+                </h5>
+                <p>
+                    <b>Coordenador</b>:
+                    <a class="underline-hover" href="http://lattes.cnpq.br/7077360730590563">João Alfíeres Andrade de Simões dos Reis</a>. 
+                    <br>
+                    <b>Colaboradores:</b> 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/3233458366434606" target="_blank">Ronaldo Silva Thibes</a>, 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/9589526464599195" target="_blank">Ignacio Sebastián Gomez</a>, 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/3386388069676151" target="_blank">Luis Nieto González</a>, 
+                    <a class="underline-hover" href="https://br.linkedin.com/in/mércia-prates-barbosa-de-queiroz-4b8484201" target="_blank">Mércia Prates Queiroz</a>, 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/8629508101936624" target="_blank">Edilson Ferreira Batista</a>, 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/8543446404106423" target="_blank">Camila Messias Barbosa Santos</a> e 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/4420253852590061" target="_blank">Marilyn Rocha Campos</a>.
+                </p>
+
+                <!-- IX Ciclo de Seminários de Física (2023) -->
+                <h5 class="fs-450 fw-bold mt-4 mb-2">
+                    <a class="text-decoration-none" href="./ciclo-de-seminarios.html">
+                        IX Ciclo de Seminários de Física (2023)
+                    </a>
+                </h5>
+                <p>
+                    <b>Coordenador</b>: 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/3233458366434606" target="_blank">Ronaldo Silva Thibes</a>.
+                    <br>
+                    <b>Colaboradores:</b> 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/9589526464599195" target="_blank">Ignacio Sebastián Gomez</a>, 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/7077360730590563" target="_blank">João Alfíeres Andrade de Simões dos Reis</a>, 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/3386388069676151" target="_blank">Luis Nieto González</a>, 
+                    <a class="underline-hover" href="https://br.linkedin.com/in/mércia-prates-barbosa-de-queiroz-4b8484201" target="_blank">Mércia Prates Queiroz</a>, 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/8629508101936624" target="_blank">Edilson Ferreira Batista</a> e 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/8543446404106423" target="_blank">Camila Messias Barbosa Santos</a>.
+                </p>
+
+                <!-- VIII Ciclo de Seminários de Física (2022) -->
+                <h5 class="fs-450 fw-bold mt-4 mb-2">
+                    <a class="text-decoration-none" href="./viii-ciclo-de-seminarios.html">
+                        VIII Ciclo de Seminários de Física (2022)
+                    </a>
+                </h5>
+                <p>
+                    <b>Coordenadores</b>: 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/3233458366434606" target="_blank">Ronaldo Silva Thibes</a> e
+                    <a class="underline-hover" href="http://lattes.cnpq.br/8629508101936624" target="_blank">Edilson Ferreira Batista</a>.
+                </p>
+
+                <!-- VII Ciclo de Seminários de Física (2021) -->
+                <h5 class="fs-450 fw-bold mt-4 mb-2">
+                    <a class="text-decoration-none" href="./vii-ciclo-de-seminarios.html">
+                        VII Ciclo de Seminários de Física (2021)
+                    </a>
+                </h5>
+                <p>
+                    <b>Coordenadores</b>: 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/3233458366434606" target="_blank">Ronaldo Silva Thibes</a> e 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/3386388069676151" target="_blank">Luis Nieto González</a>.
+                    <br>
+                    <b>Colaboradores:</b> 
+                    <a class="underline-hover" href="https://br.linkedin.com/in/mércia-prates-barbosa-de-queiroz-4b8484201" target="_blank">Mércia Prates Queiroz</a>, 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/4775960422771801" target="_blank">Roberto Claudino Ferreira</a> e 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/8629508101936624" target="_blank">Edilson Ferreira Batista</a>.
+                </p>
+
+                <!-- VI Ciclo de Seminários de Física (2020) -->
+                <h5 class="fs-450 fw-bold mt-4 mb-2">
+                    <a class="text-decoration-none" href="./vi-ciclo-de-seminarios.html">
+                        VI Ciclo de Seminários de Física (2020)
+                    </a>
+                </h5>
+                <p>
+                    <b>Coordenador</b>: 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/3233458366434606" target="_blank">Ronaldo Silva Thibes</a>. 
+                    <br>
+                    <b>Colaboradores:</b> 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/3386388069676151" target="_blank">Luis Nieto González</a>, 
+                    <a class="underline-hover" href="#!">Ana Lúcia Santos</a>, 
+                    <a class="underline-hover" href="https://br.linkedin.com/in/mércia-prates-barbosa-de-queiroz-4b8484201" target="_blank">Mércia Prates Queiroz</a>, 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/8629508101936624" target="_blank">Edilson Ferreira Batista</a>, 
+                    <a class="underline-hover" href="#!">Suzicleide Lopes de Oliveira</a> e 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/8361859724211377" target="_blank">Laura Cristina Goulart</a>. 
+                </p>
+
+                <!-- V Ciclo de Seminários de Física (2019) -->
+                <h5 class="fs-450 fw-bold mt-4 mb-2">
+                    <a class="text-decoration-none" href="./v-ciclo-de-seminarios.html">
+                        V Ciclo de Seminários de Física (2019)
+                    </a>
+                </h5>
+                <p>
+                    <b>Coordenador</b>: 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/3233458366434606" target="_blank">Ronaldo Silva Thibes</a>. 
+                </p>
+
+                <!-- IV Ciclo de Seminários de Física (2018) -->
+                <h5 class="fs-450 fw-bold mt-4 mb-2">
+                    <a class="text-decoration-none" href="./iv-ciclo-de-seminarios.html">
+                        IV Ciclo de Seminários de Física (2018)
+                    </a>
+                </h5>
+                <p>
+                    <b>Coordenador</b>: 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/3233458366434606" target="_blank">Ronaldo Silva Thibes</a>. 
+                </p>
+
+                <!-- III Ciclo de Seminários de Física (2015) -->
+                <h5 class="fs-450 fw-bold mt-4 mb-2">
+                    <a class="text-decoration-none" href="./iii-ciclo-de-seminarios.html">
+                        III Ciclo de Seminários de Física (2015)
+                    </a>
+                </h5>
+                <p>
+                    <b>Coordenador</b>: 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/3233458366434606" target="_blank">Ronaldo Silva Thibes</a>. 
+                </p>
+
+                <!-- II Ciclo de Seminários de Física (2014) -->
+                <h5 class="fs-450 fw-bold mt-4 mb-2">
+                    <a class="text-decoration-none" href="./ii-ciclo-de-seminarios.html">
+                        II Ciclo de Seminários de Física (2014)
+                    </a>
+                </h5>
+                <p>
+                    <b>Coordenador</b>: 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/3233458366434606" target="_blank">Ronaldo Silva Thibes</a>. 
+                </p>
+
+                <!-- I Ciclo de Seminários de Física (2013) -->
+                <h5 class="fs-450 fw-bold mt-4 mb-2">
+                    I Ciclo de Seminários de Física (2013)
+                </h5>
+                <p>
+                    <b>Coordenador</b>: 
+                    <a class="underline-hover" href="http://lattes.cnpq.br/3233458366434606" target="_blank">Ronaldo Silva Thibes</a>. 
+                </p>
+
+            </div>
+
+        </section>
+    </main>
+    
+
+    <!-- Footer -->
+    <footer id="footer" class="footer text-center text-lg-start bg-light mt-3">
+
+        <!-- Social Networks -->
+        <section class="container d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block"><span>Conecte-se conosco nas redes sociais:</span></div>
+            <div>
+                <a href="#!" class="m-1"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#!" class="m-1"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#!" class="m-1"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#!" class="m-1"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </section>
+        
+        <section class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+
+                <!-- Física em Itapetinga -->
+                <div class="col-md-7 col-xl-5 mb-4">
+                    <h3 class="fs-400 fw-bold mb-4">
+                        <img src="assets/favicon.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
+                        Física em Itapetinga
+                    </h3>
+                    <p>
+                        Desde 2013, o <a href="https://sites.google.com/view/colegiado-fisica-uesb-it" target="_blank">Colegiado de Física</a> 
+                        da <a href="http://www.uesb.br" target="_blank">Universidade Estadual do Sudoeste da Bahia (UESB)</a>, campus de 
+                        <a href="http://pt.wikipedia.org/wiki/Itapetinga" target="_blank">Itapetinga</a>, tem organizado o ciclo de seminários 
+                        de Física, um importante evento de divulgação científica. 
+                        <br class="d-none d-md-block d-lg-none"> O evento é realizado na própria instituição e conta  
+                        <br class="d-none d-md-block d-lg-none"> com a presença de grandes pesquisadores.
+                    </p>
+                </div>
+                
+                <hr class="d-md-none">
+
+                <!-- Eventos -->
+                <div class="d-md-none d-xl-block col-xl-3 mb-4">
+                    <div style="width: max-content; margin: 0 auto;">
+                        <h3 class="fs-400 fw-bold mb-4">Eventos Relacionados</h3>
+                        <p><a href="http://www1.fisica.org.br/~efnne/xxxvii/" target="_blank">Encontro de Física do Norte e Nordeste</a></p>
+                        <p><a href="https://www1.fisica.org.br/~epef/xx/index.php/pt/" target="_blank">Encontro de Pesquisa em Ensino de Física</a></p>
+                        <p><a href="https://www.ufrgs.br/ebm2023/" target="_blank">Escola Brasileira de Magnetismo</a></p>
+                        <p><a href="https://mesonpiold.cbpf.br/renafae/escolacern/" target="_blank">Escola de Física CERN</a></p>
+                        <p><a href="http://www1.fisica.org.br/~eosbf/2023/index.php/en/" target="_blank">Encontro de Outono da SBF</a></p>
+                    </div>
+                </div>
+
+                <hr class="d-md-none">
+        
+                <!-- Contato -->
+                <div class="col-md-5 col-xl-4 mb-4">
+                    <div style="width: max-content; margin: 0 auto;">
+                        <h3 class="fs-400 fw-bold mb-4">Contato</h3>
+                        <p><a class="underline-hover" href="https://www.google.com/maps/search/Universidade+Estadual+do+Sudoeste+da+Bahia-UESB/@-15.2542215,-40.2746739,1090m/data=!3m1!1e3?entry=ttu" target="_blank"><i class="fa-solid fa-house me-2"></i>BR 415, Itapetinga - BA, 45700-000</a></p>
+                        <p><a class="underline-hover" href="mailto:col.fisica.it@gmail.com"><i class="fa-solid fa-envelope me-2"></i>col.fisica.it@gmail.com</a></p>
+                        <p><a class="underline-hover" href="tel://7732618693/"><i class="fa-solid fa-phone me-2"></i>(77) 3261-8693</a></p>
+                        <!-- <p><i class="fa-solid fa-fax me-2"></i>(77) 3261-8693</p> -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+  
+        <!-- Copyright -->
+        <section class="container fs-300 text-center py-3">
+            © <script>document.write(new Date().getFullYear())</script> <a href="https://azrmicael.com/" target="_blank">AzrMicael</a>. Todos os direitos reservados.
+        </section>
+    </footer>
+</body>
+
+</html>

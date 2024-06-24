@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<!-- Física em Itapetinga (I Ciclo de Seminários de Física - 2015) -->
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.png">
+
+    <!-- HTML Meta Tags -->
+    <title>I Ciclo de Seminários de Física | Física em Itapetinga</title>
+    <meta name="description" content="Olá! Esta é a página dos Ciclos de Seminários de Física em Itapetinga.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://fisica.itapetinga.net">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Física em Itapetinga">
+    <meta property="og:description" content="Olá! Esta é a página dos Ciclos de Seminários de Física em Itapetinga.">
+    <meta property="og:image" content="https://github.com/azrmicael/icons/blob/main/open-graph/og-physics.png?raw=true"> <!-- 1200x630px -->
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="fisica.itapetinga.net">
+    <meta property="twitter:url" content="http://fisica.itapetinga.net">
+    <meta name="twitter:title" content="Física em Itapetinga">
+    <meta name="twitter:description" content="Olá! Esta é a página dos Ciclos de Seminários de Física em Itapetinga.">
+    <meta name="twitter:image" content="https://github.com/azrmicael/icons/blob/main/open-graph/og-physics.png?raw=true"> <!-- 1200x630px -->
+    
+    <!-- Bootstrap CSS and JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Our custom CSS and JS -->
+    <link rel="stylesheet" href="ciclo-de-seminarios.css">
+    <script src="ciclo-de-seminarios.js" defer></script>
+</head>
+
+<body id="i-ciclo" class="i-ciclo">
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary" data-bs-theme="light">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="./ciclo-de-seminarios.html">
+                    <img src="assets/favicon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                    Física em Itapetinga
+                </a>
+
+                <div class="theme-and-menu-toggler">
+
+                    <!-- Light/Dark Theme Toggler -->
+                    <div class="theme-toggler">
+                        <input type="checkbox" class="checkbox" id="checkbox" aria-label="toggle theme">
+                        <label for="checkbox" class="checkbox-label">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <span class="ball"></span>
+                        </label>
+                    </div>
+
+                    <!-- Navbar Toggler -->
+                    <button class="navbar-toggler text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toggle navigation">
+                        <span class="sr-only">Menu</span>
+                        <svg fill="var(--clr-secondary)" class="hamburger" viewBox="0 0 100 100" width="250">
+                            <rect class="line top" width="80" height="10" x="10" y="15" rx="5"></rect>
+                            <rect class="line middle" width="80" height="10" x="10" y="45" rx="5"></rect>
+                            <rect class="line bottom" width="80" height="10" x="10" y="75" rx="5"></rect>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" data-visible="false" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="./ciclo-de-seminarios.html">Início</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="./ciclos-anteriores.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Edições Anteriores
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./viii-ciclo-de-seminarios.html">VIII Ciclo de Seminários de Física (2022)</a></li>
+                                <li><a class="dropdown-item" href="./vii-ciclo-de-seminarios.html">VII Ciclo de Seminários de Física (2021)</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item active" aria-current="page" href="./ciclos-anteriores.html">Outras Edições do Ciclo de Seminários</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item"><a class="nav-link" href="./sobre-nos.html">Sobre Nós</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main id="main" class="main">
+
+        <!-- Banner Section -->
+        <section id="banner" class="banner">
+            <div class="banner--overlay h-100 w-100">
+                <div class="container-custom w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="fw-bold mb-2 text-center text-white">I Ciclo de Seminários de Física em Itapetinga</h1>
+                    <p class="fw-bold text-center text-white">Colegiado de Física da Universidade Estadual do Sudoeste da Bahia</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <div class="row pt-4 mb-4" style="max-width: 97rem; margin: 0 auto;">
+
+            <!-- Seminários Técnicos e Comunicações Científicas SR-ONLY -->
+            <section id="technical-seminars" class="technical-seminars sr-only">
+                <div class="container-custom" style="max-width: max-content;">
+                    <h2 class="fs-600 fw-bold mt-5 mb-5">Seminários Técnicos e Comunicações Científicas</h2>
+
+                    <!-- Timeline -->
+                    <ul class="timeline-with-icons ms-3">
+                        
+                        <!-- Timeline Item -->
+                        <li class="timeline-item mb-5">
+                            <span class="timeline-icon"><i class="fa-solid fa-satellite"></i></span>
+                            <h5 class="fw-bold mb-2" style="max-width: 700px;">
+                                Dinâmica de Satélites Artificiais
+                            </h5>
+    
+                            <div class="row row-cols-1 row-cols-md-2 mb-2" style="line-height: 1.7; max-width: 650px;">
+                                <!-- Date -->
+                                <div class="col">
+                                    <i class="fa-regular fa-calendar me-2 text-center" style="width: 22px;">
+                                    </i>22 Jan 2014 (quarta-feira)
+                                </div>
+                                <!-- Time -->
+                                <div class="col">
+                                    <i class="fa-regular fa-clock me-2 text-center" style="width: 22px;">
+                                    </i>Às 18:40 (horário de Brasília)
+                                </div>
+                                <!-- Speaker -->
+                                <div class="col">
+                                    <i class="fa-solid fa-person-chalkboard me-2 text-center" style="width: 22px;">
+                                    </i><a href="http://lattes.cnpq.br/1104942016215240">Jean Paulo dos Santos Carvalho</a>
+                                </div>
+                                <!-- Institution -->
+                                <div class="col">
+                                    <i class="fa-solid fa-building-columns me-2 text-center" style="width: 22px;">
+                                    </i> UFRB - Feira de Santana
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- Timeline Item -->
+                        <li class="timeline-item mb-5">
+                            <span class="timeline-icon"><i class="fa-solid fa-atom"></i></span>
+                            <h5 class="fw-bold mb-2" style="max-width: 700px;">
+                                A Simple Monte Carlo Based Model to describe Kinetic Properties of Elementary Chemical Reactions
+                            </h5>
+    
+                            <div class="row row-cols-1 row-cols-md-2 mb-2" style="line-height: 1.7; max-width: 650px;">
+                                <!-- Date -->
+                                <div class="col">
+                                    <i class="fa-regular fa-calendar me-2 text-center" style="width: 22px;">
+                                    </i>04 Abr 2014 (sexta-feira)
+                                </div>
+                                <!-- Time -->
+                                <div class="col">
+                                    <i class="fa-regular fa-clock me-2 text-center" style="width: 22px;">
+                                    </i>Às 18:40 (horário de Brasília)
+                                </div>
+                                <!-- Speaker -->
+                                <div class="col">
+                                    <i class="fa-solid fa-person-chalkboard me-2 text-center" style="width: 22px;">
+                                    </i><a href="http://lattes.cnpq.br/4295728174569492">Nemesio Matos de Oliveira Neto</a>
+                                </div>
+                                <!-- Institution -->
+                                <div class="col">
+                                    <i class="fa-solid fa-building-columns me-2 text-center" style="width: 22px;">
+                                    </i>DQE/UESB - Itapetinga
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Timeline Item -->
+                        <li class="timeline-item mb-5">
+                            <span class="timeline-icon"><i class="fa-solid fa-atom"></i></span>
+                            <h5 class="fw-bold mb-2" style="max-width: 700px;">
+                                O Conceito de Espaço Dual e suas Aplicações em Física
+                            </h5>
+    
+                            <div class="row row-cols-1 row-cols-md-2 mb-2" style="line-height: 1.7; max-width: 650px;">
+                                <!-- Date -->
+                                <div class="col">
+                                    <i class="fa-regular fa-calendar me-2 text-center" style="width: 22px;">
+                                    </i>06 Maio 2014 (terça-feira)
+                                </div>
+                                <!-- Time -->
+                                <div class="col">
+                                    <i class="fa-regular fa-clock me-2 text-center" style="width: 22px;">
+                                    </i>Às 18:40 (horário de Brasília)
+                                </div>
+                                <!-- Speaker -->
+                                <div class="col">
+                                    <i class="fa-solid fa-person-chalkboard me-2 text-center" style="width: 22px;">
+                                    </i><a href="http://lattes.cnpq.br/8361859724211377">Laura Cristina Rodrigues Goulart</a>
+                                </div>
+                                <!-- Institution -->
+                                <div class="col">
+                                    <i class="fa-solid fa-building-columns me-2 text-center" style="width: 22px;">
+                                    </i>DCEN/UESB - Itapetinga
+                                </div>
+                            </div>
+                        </li>
+    
+                        <!-- Timeline Item -->
+                        <li class="timeline-item mb-5">
+                            <span class="timeline-icon"><i class="fa-solid fa-magnet"></i></span>
+                            <h5 class="fw-bold mb-2" style="max-width: 700px;">
+                                Aplicações de Nanopartículas Magnéticas
+                            </h5>
+    
+                            <div class="row row-cols-1 row-cols-md-2" style="line-height: 1.7; max-width: 650px;">
+                                <!-- Date -->
+                                <div class="col">
+                                    <i class="fa-regular fa-calendar me-2 text-center" style="width: 22px;">
+                                    </i>04 Jun 2014 (quarta-feira)
+                                </div>
+                                <!-- Time -->
+                                <div class="col">
+                                    <i class="fa-regular fa-clock me-2 text-center" style="width: 22px;">
+                                    </i>Às 18:40 (horário de Brasília)
+                                </div>
+                                <!-- Speaker -->
+                                <div class="col">
+                                    <i class="fa-solid fa-person-chalkboard me-2 text-center" style="width: 22px;">
+                                    </i><a href="http://lattes.cnpq.br/8543446404106423">Camila Messias Barbosa Santos</a>
+                                </div>
+                                <!-- Institution -->
+                                <div class="col">
+                                    <i class="fa-solid fa-building-columns me-2 text-center" style="width: 22px;">
+                                    </i>DCEN/UESB - Itapetinga
+                                </div>
+                            </div>
+                        </li>
+    
+                        <!-- Timeline Item -->
+                        <li class="timeline-item mb-5">
+                            <span class="timeline-icon"><i class="fa-solid fa-dna"></i></span>
+                            <h5 class="fw-bold mb-2" style="max-width: 700px;">
+                                Estudo do DNA a partir de Técnicas de Caracterização da Física
+                            </h5>
+    
+                            <div class="row row-cols-1 row-cols-md-2" style="line-height: 1.7; max-width: 650px;">
+                                <!-- Date -->
+                                <div class="col">
+                                    <i class="fa-regular fa-calendar me-2 text-center" style="width: 22px;">
+                                    </i>09 Jun 2014 (segunda-feira)
+                                </div>
+                                <!-- Time -->
+                                <div class="col">
+                                    <i class="fa-regular fa-clock me-2 text-center" style="width: 22px;">
+                                    </i>Às 18:40 (horário de Brasília)
+                                </div>
+                                <!-- Speaker -->
+                                <div class="col">
+                                    <i class="fa-solid fa-person-chalkboard me-2 text-center" style="width: 22px;">
+                                    </i><a href="http://lattes.cnpq.br/3386388069676151">Luis Nieto González</a>
+                                </div>
+                                <!-- Institution -->
+                                <div class="col">
+                                    <i class="fa-solid fa-building-columns me-2 text-center" style="width: 22px;">
+                                    </i>DCEN/UESB - Itapetinga</a>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <!-- Timeline Item -->
+                        <li class="timeline-item mb-5">
+                            <span class="timeline-icon"><i class="fa-solid fa-atom"></i></span>
+                            <h5 class="fw-bold mb-2" style="max-width: 700px;">
+                                Decaimento Alfa
+                            </h5>
+    
+                            <div class="row row-cols-1 row-cols-md-2" style="line-height: 1.7; max-width: 650px;">
+                                <!-- Date -->
+                                <div class="col">
+                                    <i class="fa-regular fa-calendar me-2 text-center" style="width: 22px;">
+                                    </i>14 Jul 2014 (segunda-feira)
+                                </div>
+                                <!-- Time -->
+                                <div class="col">
+                                    <i class="fa-regular fa-clock me-2 text-center" style="width: 22px;">
+                                    </i>Às 18:40 (horário de Brasília)
+                                </div>
+                                <!-- Speaker -->
+                                <div class="col">
+                                    <i class="fa-solid fa-person-chalkboard me-2 text-center" style="width: 22px;">
+                                    </i><a href="http://lattes.cnpq.br/6273313254651246">Suzicleide Lopes de Oliveira</a>
+                                </div>
+                                <!-- Institution -->
+                                <div class="col">
+                                    <i class="fa-solid fa-building-columns me-2 text-center" style="width: 22px;">
+                                    </i>DCEN/UESB - Itapetinga
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Timeline Item -->
+                        <li class="timeline-item mb-5">
+                            <span class="timeline-icon"><i class="fa-solid fa-radiation"></i></span>
+                            <h5 class="fw-bold mb-2" style="max-width: 700px;">
+                                Aplicação da Tecnologia Nuclear na Indústria, na Medicina e na Conservação de Artefatos Históricos
+                            </h5>
+    
+                            <div class="row row-cols-1 row-cols-md-2" style="line-height: 1.7; max-width: 650px;">
+                                <!-- Date -->
+                                <div class="col">
+                                    <i class="fa-regular fa-calendar me-2 text-center" style="width: 22px;">
+                                    </i>26 Ago 2014 (terça-feira)
+                                </div>
+                                <!-- Time -->
+                                <div class="col">
+                                    <i class="fa-regular fa-clock me-2 text-center" style="width: 22px;">
+                                    </i>Às 18:40 (horário de Brasília)
+                                </div>
+                                <!-- Speaker -->
+                                <div class="col">
+                                    <i class="fa-solid fa-person-chalkboard me-2 text-center" style="width: 22px;">
+                                    </i><a href="http://lattes.cnpq.br/2250492975564163">Luciana Sousa Silva</a>
+                                </div>
+                                <!-- Institution -->
+                                <div class="col">
+                                    <i class="fa-solid fa-building-columns me-2 text-center" style="width: 22px;">
+                                    </i>DCEN/UESB - Itapetinga
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <!-- Timeline Item -->
+                        <li class="timeline-item mb-5">
+                            <span class="timeline-icon"><i class="fa-solid fa-atom"></i></span>
+                            <h5 class="fw-bold mb-2" style="max-width: 700px;">
+                                Os Sete Problemas do Milênio
+                            </h5>
+    
+                            <div class="row row-cols-1 row-cols-md-2" style="line-height: 1.7; max-width: 650px;">
+                                <!-- Date -->
+                                <div class="col">
+                                    <i class="fa-regular fa-calendar me-2 text-center" style="width: 22px;">
+                                    </i>12 Set 2014 (sexta-feira)
+                                </div>
+                                <!-- Time -->
+                                <div class="col">
+                                    <i class="fa-regular fa-clock me-2 text-center" style="width: 22px;">
+                                    </i>Às 18:40 (horário de Brasília)
+                                </div>
+                                <!-- Speaker -->
+                                <div class="col">
+                                    <i class="fa-solid fa-person-chalkboard me-2 text-center" style="width: 22px;">
+                                    </i><a href="http://lattes.cnpq.br/3233458366434606">Ronaldo Silva Thibes</a>
+                                </div>
+                                <!-- Institution -->
+                                <div class="col">
+                                    <i class="fa-solid fa-building-columns me-2 text-center" style="width: 22px;">
+                                    </i>DCEN/UESB - Itapetinga
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Timeline Item -->
+                        <li class="timeline-item mb-5">
+                            <span class="timeline-icon"><i class="fa-solid fa-atom"></i></span>
+                            <h5 class="fw-bold mb-2" style="max-width: 700px;">
+                                Espectroscopia Raman e Teoria de Grupos
+                            </h5>
+    
+                            <div class="row row-cols-1 row-cols-md-2" style="line-height: 1.7; max-width: 650px;">
+                                <!-- Date -->
+                                <div class="col">
+                                    <i class="fa-regular fa-calendar me-2 text-center" style="width: 22px;">
+                                    </i>01 Out 2014 (quarta-feira)
+                                </div>
+                                <!-- Time -->
+                                <div class="col">
+                                    <i class="fa-regular fa-clock me-2 text-center" style="width: 22px;">
+                                    </i>Às 18:40 (horário de Brasília)
+                                </div>
+                                <!-- Speaker -->
+                                <div class="col">
+                                    <i class="fa-solid fa-person-chalkboard me-2 text-center" style="width: 22px;">
+                                    </i><a href="http://lattes.cnpq.br/8543446404106423">Camila Messias Barbosa Santos</a>
+                                </div>
+                                <!-- Institution -->
+                                <div class="col">
+                                    <i class="fa-solid fa-building-columns me-2 text-center" style="width: 22px;">
+                                    </i>DCEN/UESB - Itapetinga
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Timeline Item -->
+                        <li class="timeline-item mb-5">
+                            <span class="timeline-icon"><i class="fa-solid fa-radiation"></i></span>
+                            <h5 class="fw-bold mb-2" style="max-width: 700px;">
+                                Modelagem Computacional aplicada a Reações Nucleares
+                            </h5>
+    
+                            <div class="row row-cols-1 row-cols-md-2" style="line-height: 1.7; max-width: 650px;">
+                                <!-- Date -->
+                                <div class="col">
+                                    <i class="fa-regular fa-calendar me-2 text-center" style="width: 22px;">
+                                    </i>06 Nov 2014 (quinta-feira)
+                                </div>
+                                <!-- Time -->
+                                <div class="col">
+                                    <i class="fa-regular fa-clock me-2 text-center" style="width: 22px;">
+                                    </i>Às 18:40 (horário de Brasília)
+                                </div>
+                                <!-- Speaker -->
+                                <div class="col">
+                                    <i class="fa-solid fa-person-chalkboard me-2 text-center" style="width: 22px;">
+                                    </i><a href="http://lattes.cnpq.br/4775960422771801">Roberto Claudino Ferreira</a>
+                                </div>
+                                <!-- Institution -->
+                                <div class="col">
+                                    <i class="fa-solid fa-building-columns me-2 text-center" style="width: 22px;">
+                                    </i>DCEN/UESB - Itapetinga
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Timeline Item -->
+                        <li class="timeline-item mb-5">
+                            <span class="timeline-icon"><i class="fa-solid fa-atom"></i></span>
+                            <h5 class="fw-bold mb-2" style="max-width: 700px;">
+                                A Simetria Quiral e o Potencial Nucleon-Necleon
+                            </h5>
+    
+                            <div class="row row-cols-1 row-cols-md-2" style="line-height: 1.7; max-width: 650px;">
+                                <!-- Date -->
+                                <div class="col">
+                                    <i class="fa-regular fa-calendar me-2 text-center" style="width: 22px;">
+                                    </i>01 Dez 2014 (segunda-feira)
+                                </div>
+                                <!-- Time -->
+                                <div class="col">
+                                    <i class="fa-regular fa-clock me-2 text-center" style="width: 22px;">
+                                    </i>Às 18:40 (horário de Brasília)
+                                </div>
+                                <!-- Speaker -->
+                                <div class="col">
+                                    <i class="fa-solid fa-person-chalkboard me-2 text-center" style="width: 22px;">
+                                    </i><a href="http://lattes.cnpq.br/8629508101936624">Edilson Ferreira Batista</a>
+                                </div>
+                                <!-- Institution -->
+                                <div class="col">
+                                    <i class="fa-solid fa-building-columns me-2 text-center" style="width: 22px;">
+                                    </i>DCEN/UESB - Itapetinga
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+    
+            </section>
+
+        </div>
+
+    </main>
+    
+
+    <!-- Footer -->
+    <footer id="footer" class="footer text-center text-lg-start bg-light mt-3">
+
+        <!-- Social Networks -->
+        <section class="container d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block"><span>Conecte-se conosco nas redes sociais:</span></div>
+            <div>
+                <a href="#!" class="m-1"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#!" class="m-1"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#!" class="m-1"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#!" class="m-1"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </section>
+        
+        <section class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+
+                <!-- Física em Itapetinga -->
+                <div class="col-md-7 col-xl-5 mb-4">
+                    <h3 class="fs-400 fw-bold mb-4">
+                        <img src="assets/favicon.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
+                        Física em Itapetinga
+                    </h3>
+                    <p>
+                        Desde 2013, o <a href="https://sites.google.com/view/colegiado-fisica-uesb-it" target="_blank">Colegiado de Física</a> 
+                        da <a href="http://www.uesb.br" target="_blank">Universidade Estadual do Sudoeste da Bahia (UESB)</a>, campus de 
+                        <a href="http://pt.wikipedia.org/wiki/Itapetinga" target="_blank">Itapetinga</a>, tem organizado o ciclo de seminários 
+                        de Física, um importante evento de divulgação científica. 
+                        <br class="d-none d-md-block d-lg-none"> O evento é realizado na própria instituição e conta  
+                        <br class="d-none d-md-block d-lg-none"> com a presença de grandes pesquisadores.
+                    </p>
+                </div>
+                
+                <hr class="d-md-none">
+
+                <!-- Eventos -->
+                <div class="d-md-none d-xl-block col-xl-3 mb-4">
+                    <div style="width: max-content; margin: 0 auto;">
+                        <h3 class="fs-400 fw-bold mb-4">Eventos Relacionados</h3>
+                        <p><a href="http://www1.fisica.org.br/~efnne/xxxvii/" target="_blank">Encontro de Física do Norte e Nordeste</a></p>
+                        <p><a href="https://www1.fisica.org.br/~epef/xx/index.php/pt/" target="_blank">Encontro de Pesquisa em Ensino de Física</a></p>
+                        <p><a href="https://www.ufrgs.br/ebm2023/" target="_blank">Escola Brasileira de Magnetismo</a></p>
+                        <p><a href="https://mesonpiold.cbpf.br/renafae/escolacern/" target="_blank">Escola de Física CERN</a></p>
+                        <p><a href="http://www1.fisica.org.br/~eosbf/2023/index.php/en/" target="_blank">Encontro de Outono da SBF</a></p>
+                    </div>
+                </div>
+
+                <hr class="d-md-none">
+        
+                <!-- Contato -->
+                <div class="col-md-5 col-xl-4 mb-4">
+                    <div style="width: max-content; margin: 0 auto;">
+                        <h3 class="fs-400 fw-bold mb-4">Contato</h3>
+                        <p><a class="underline-hover" href="https://www.google.com/maps/search/Universidade+Estadual+do+Sudoeste+da+Bahia-UESB/@-15.2542215,-40.2746739,1090m/data=!3m1!1e3?entry=ttu" target="_blank"><i class="fa-solid fa-house me-2"></i>BR 415, Itapetinga - BA, 45700-000</a></p>
+                        <p><a class="underline-hover" href="mailto:col.fisica.it@gmail.com"><i class="fa-solid fa-envelope me-2"></i>col.fisica.it@gmail.com</a></p>
+                        <p><a class="underline-hover" href="tel://7732618693/"><i class="fa-solid fa-phone me-2"></i>(77) 3261-8693</a></p>
+                        <!-- <p><i class="fa-solid fa-fax me-2"></i>(77) 3261-8693</p> -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+  
+        <!-- Copyright -->
+        <section class="container fs-300 text-center py-3">
+            © <script>document.write(new Date().getFullYear())</script>
+ <a href="https://azrmicael.com/" target="_blank">AzrMicael</a>. Todos os direitos reservados.
+        </section>
+    </footer>
+</body>
+
+</html>
